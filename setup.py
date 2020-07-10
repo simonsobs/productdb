@@ -1,4 +1,5 @@
 from setuptools import setup, find_packages
+import versioneer
 
 from pathlib import Path
 
@@ -6,7 +7,9 @@ here = Path(__file__).resolve().parent
 long_description = here.joinpath('README.md').read_text()
 
 setup(
-    name='acondbs',
+    name='productdb',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='A client of Acondbs',
     long_description=long_description,
     long_description_content_type='text/markdown',

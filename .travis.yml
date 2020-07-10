@@ -25,6 +25,9 @@ after_success:
 cache: apt
 
 deploy:
+  provider: pypi
+  user: tai.sakuma
+  distributions: sdist bdist_wheel
   password:
     secure: XBnTHmw2El52k2rOVVoz/0rfvbKJAVuq7/xfFTaAgE/AYwTTtqQXkB6/S2KGah5Zs5PgB4iGkfnuIwTDg03CNHVx7cdKxN8ZJashBJvh2fNYzak0Y4M/RJs/mTExxFqLG7Edf2OhyWmeTjnGYWiqU0aa6SD/3pwy6VwcwQTguxae713JGBCLyLxacruhonO2G95vF6OcKinB/RNNvgJEVsp9xxbIxXJbDIoiQFYH46EKkWUcN9uRb262GQckyRUd9+vbFGkJezw1BboYDF0nslbcTXqrHK8r3GZGL1vMHluaj4VzGU6CErkYxQwKDijSEMu1LZ1dvq1MmnhYNny+6G3uKgiKNAgmlHztLuh7a7QLztII1gqIWv1Ryz0D/YteEabbR7IvVQzTjuSMuIc6JK3SRbk0CI74Vt4/sQ3xYXj1aZqymeM+cFh1GdeWxJlqqZahVj7J9TlQBCGreQTb/gMFlCxS5sCw8iyWzGeed1haRW1lyvMnr00pjO/RIdbDr9E9MefivYO/hWI7APEJi+mbpwxW+9Rt/1w3VuPDlvRXPGeahR/FXI1WW+ZzYGYkRnYK7jm1Jbew4+a2S8F5q4wOxUxDkwd0Ak/7njmU6vqC4IOJ/YD0qdorTQB2r/4NDgFiphtRT63ZJHOOOtI1r0q0OaDDv7CKYujG/EMg2y0=
   on:
